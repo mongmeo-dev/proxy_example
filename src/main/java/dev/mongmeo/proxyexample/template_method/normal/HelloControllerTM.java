@@ -10,7 +10,7 @@ public class HelloControllerTM extends AbstractLogTemplate<Void> {
 
   @Override
   protected Void logic(Object... args) {
-    String result = helloRepository.getHelloData();
+    String result = helloRepository.execute();
     log.info("result : {}", result);
     return null;
   }

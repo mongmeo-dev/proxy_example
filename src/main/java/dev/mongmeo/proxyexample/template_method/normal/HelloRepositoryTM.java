@@ -6,10 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class HelloRepositoryTM extends AbstractLogTemplate<String> {
 
-  public String getHelloData() {
-    return execute();
-  }
-
   @Override
   protected String logic(Object... args) throws Exception {
     Thread.sleep(1000);

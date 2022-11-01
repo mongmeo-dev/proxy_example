@@ -10,9 +10,8 @@ public class Context {
   private final Strategy strategy;
 
   public Object execute(Object... args) {
-    String className = this.getClass().getSimpleName();
-    String methodName = new Object() {}.getClass().getEnclosingMethod().getName();
-    String logPrefix = "[" + className + "." + methodName + "()]";
+    String className = this.strategy.getClass().getSimpleName();
+    String logPrefix = "[" + className + "." + "execute()]";
 
     long startTime = System.currentTimeMillis();
     log.info("{} - Called!", logPrefix);

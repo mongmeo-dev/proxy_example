@@ -7,19 +7,18 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 public class Context {
 
-  private final Callback strategy;
+  private final Callback callback;
 
   public Object execute(Object... args) {
-    String className = this.getClass().getSimpleName();
-    String methodName = new Object() {}.getClass().getEnclosingMethod().getName();
-    String logPrefix = "[" + className + "." + methodName + "()]";
+    String className = this.callback.getClass().getSimpleName();
+    String logPrefix = "[" + className + "." + "execute()]";
 
     long startTime = System.currentTimeMillis();
     log.info("{} - Called!", logPrefix);
     try {
       log.info("{} - Main Logic Started!!", logPrefix);
 
-      Object result = strategy.execute(args);
+      Object result = callback.execute(args);
 
       long endTime = System.currentTimeMillis();
       long elapsedTime = endTime - startTime;
