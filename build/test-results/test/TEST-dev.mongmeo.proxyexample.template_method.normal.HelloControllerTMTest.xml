@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.mongmeo.proxyexample.template_method.normal.HelloControllerTMTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-01T08:45:09" hostname="HondDaeui-MacBookAir.local" time="1.028">
+  <properties/>
+  <testcase name="test()" classname="dev.mongmeo.proxyexample.template_method.normal.HelloControllerTMTest" time="1.028"/>
+  <system-out><![CDATA[17:45:09.251 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Called!
+17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Main Logic Started!!
+17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Called!
+17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Main Logic Started!!
+17:45:10.259 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Finish! Elapsed Time : 1005ms
+17:45:10.260 [Test worker] INFO dev.mongmeo.proxyexample.template_method.normal.HelloControllerTM - result : hello
+17:45:10.260 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Finish! Elapsed Time : 1010ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

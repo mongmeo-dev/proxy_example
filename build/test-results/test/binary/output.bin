@@ -1,0 +1,7 @@
+á17:45:09.251 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Called!
+î17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Main Logic Started!!
+á17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Called!
+î17:45:09.253 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Main Logic Started!!
+ù17:45:10.259 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloRepositoryTM.execute()] - Finish! Elapsed Time : 1005ms
+s17:45:10.260 [Test worker] INFO dev.mongmeo.proxyexample.template_method.normal.HelloControllerTM - result : hello
+ù17:45:10.260 [Test worker] INFO dev.mongmeo.proxyexample.template_method.AbstractLogTemplate - [HelloControllerTM.execute()] - Finish! Elapsed Time : 1010ms
