@@ -10,8 +10,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.aspectj:aspectjweaver:1.9.9.1'
     implementation 'org.springframework:spring-context:5.3.23'
-    implementation 'org.springframework:spring-aop:5.3.23'
     implementation 'ch.qos.logback:logback-classic:1.4.1'
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
@@ -19,6 +19,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    // https://mvnrepository.com/artifact/org.springframework/spring-test
+    testImplementation 'org.springframework:spring-test:5.3.23'
 }
 
 test {
