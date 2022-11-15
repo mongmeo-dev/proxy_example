@@ -25,7 +25,7 @@ class DynamicHelloControllerImplTest {
         new Class[]{DynamicHelloController.class},
         new LogInvocationHandler(helloController));
 
-    proxyHelloController.execute();;
+    proxyHelloController.execute();
   }
 
 }
